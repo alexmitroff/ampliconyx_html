@@ -220,20 +220,20 @@ section > a > .product > .product-content{
 }
 
 div.about{
-    background-color:#697FFC;
+    background-color:#938fff;
     background-blend-mode: multiply;
 }
 
 div.tech{
-    background-color: #108670;
+    background-color: #82ffea;
     background-blend-mode: multiply;
 }
 
 section > a:hover > .product.about p,
-a.about{color:#697FFC;}
+a.about{color:#938fff;}
 
 section > a:hover > .product.tech p,
-a.tech{color:#FD950D;}
+a.tech{color:#66c7b7;}
 
 section > a:hover > .product.prod p,
 a.prod{color:#2FAB2F;}
