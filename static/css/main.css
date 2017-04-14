@@ -78,7 +78,7 @@ nav ul li {
     padding:1rem;
 }
 
-section > a > .product h3,
+section > a > .product p,
 a,
 nav ul li a{
     transition: all .3s ease-in-out 0s;
@@ -143,27 +143,7 @@ ul.active{
     margin-bottom:1rem;
 }
 
-.carousel-item > div > h2,
-.carousel-item > div > a.button{
-    color:white;
-}
 
-.carousel-item > div > a.button:hover{
-    color:#00B5AD;
-    border-color: #00B5AD;
-}
-
-.carousel-item > div > a.button{
-    padding:.5rem 1rem;
-    border:.07rem solid white;
-    text-decoration: none;
-    border-radius: .2rem;
-}
-
-.carousel-item > div > a.button-green:hover{
-    color:green;
-    border-color:green;
-}
 
 h2.separator{
     text-align:center;
@@ -233,7 +213,7 @@ section > a > .product{
 section > a > .product:before{
     content:"";
     display:block;
-    padding-top:15vh;
+    padding-top:10vh;
 }
 
 section > a > .product > .product-content{
@@ -244,11 +224,21 @@ div.about{
     background-blend-mode: multiply;
 }
 
-a.about{color:#697FFC;}
-a.tech{color:#FD950D;}
-a.products{color:#2FAB2F;}
+div.tech{
+    background-color: #108670;
+    background-blend-mode: multiply;
+}
 
-section > a > .product h3{
+section > a:hover > .product.about p,
+a.about{color:#697FFC;}
+
+section > a:hover > .product.tech p,
+a.tech{color:#FD950D;}
+
+section > a:hover > .product.prod p,
+a.prod{color:#2FAB2F;}
+
+section > a > .product p{
     background-color:rgba(255,255,255,.7);
     text-align:center;
     border-top:.5rem solid white;
@@ -256,7 +246,7 @@ section > a > .product h3{
     height:25%;
 }
 
-section > a:hover .product h3{
+section > a:hover .product p{
     background-color:white;
 }
 
@@ -282,6 +272,8 @@ section > a:hover .product h3{
 .news{
     display:flex;
     justify-content:space-between;
+    flex-direction:column;
+    padding: 0 1rem;
 }
 
 .news .news-item{
@@ -299,8 +291,12 @@ div.btn{
     padding:1rem 0;
 }
 
+.carousel-item > div > a.button,
 div.btn > a{
-    width:fit-content
+    width:-moz-fit-content;
+    width:-webkit-fit-content;
+    width:-ms-fit-content;
+    width:-o-fit-content;
     display:block;
     text-transform:uppercase;
     padding:.5rem 1rem;
@@ -309,7 +305,28 @@ div.btn > a{
     font-size:1rem;
     text-decoration:none;
     border-radius:2rem;
+    margin:0 auto;
 }
+
+.carousel-item > div > h2,
+.carousel-item > div > a.button{
+    color:white;
+}
+
+.carousel-item > div > a.button{
+     border-color: white;
+}
+
+.carousel-item > div > a.button:hover{
+    color:#00B5AD;
+    border-color: #00B5AD;
+}
+
+.carousel-item > div > a.button-green:hover{
+    color:green;
+    border-color:green;
+}
+
 
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width:560px) and (max-width:767px) {
@@ -334,19 +351,26 @@ div.btn > a{
    main{margin-top:6rem;}
   header > nav{padding-top:2rem;}
   .news-item{width:40%;}
+    .news{flex-direction:row;}
+    div.btn > a{margin:0 0 0 1rem;}
 }
 
 /* Rules for tablet horisontal and small ultrabook screens */
 @media (min-width:768px) and (max-width:919px) {
     section > a {width:50%;}
+    div.btn > a{margin:0 0 0 1rem;}
 }
 
 /* Rules for middle screens */
 @media (min-width:920px) and (max-width:1199px) {
     .container{width:75%;}
+    .news{padding:0;}
+    div.btn > a{margin:0;}
 }
 
 /* Rules for large screens */
 @media (min-width:1200px) {
     .container{width:65%;}
+    .news{padding:0;}
+    div.btn > a{margin: 0;}
 }
