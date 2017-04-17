@@ -59,8 +59,8 @@ footer .copyright{
 nav{
     background-image:url(../imgs/lines.svg);
     background-repeat:no-repeat;
-    background-size:100%;
-    background-position:-7rem 70%;
+    background-size:60%;
+    background-position:0 90%;
 }
 
 nav ul{
@@ -257,6 +257,7 @@ section > a > .product p{
     padding:0 0 .2rem 0;
     height:25%;
     font-size:1.2rem;
+    font-weight:bold;
 }
 
 section > a:hover .product p{
