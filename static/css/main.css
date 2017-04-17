@@ -56,6 +56,13 @@ footer .copyright{
     background-color: rgba(0,0,0,.4);
 }
 
+nav{
+    background-image:url(../imgs/lines.svg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:-7rem 70%;
+}
+
 nav ul{
     list-style:none;
     display:none;
