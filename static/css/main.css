@@ -86,7 +86,7 @@ nav ul li a{
 
 nav ul li a{
     text-decoration:none;
-    color:#888;
+    color:#eee;
 }
 
 nav ul li a:hover{
@@ -154,7 +154,8 @@ h2.separator{
 section{
     display:flex;
     flex-direction: column;
-    padding:1rem 0 0 0;
+    padding:0 0 0 0;
+    margin-bottom:1rem;
 }
 
 
@@ -205,6 +206,7 @@ section > a {
 }
 
 section > a > .product{
+    margin-top:1rem;
     width:100%;
     background-size:cover;
     background-position:center;
@@ -220,30 +222,34 @@ section > a > .product > .product-content{
 }
 
 div.about{
-    background-color:#938fff;
+    background-color:#d58fff;
     background-blend-mode: multiply;
 }
 
 div.tech{
-    background-color: #82ffea;
+    background-color: #91ecff;
     background-blend-mode: multiply;
 }
 
-section > a:hover > .product.about p,
-a.about{color:#938fff;}
+section > a:hover > .product.about p{color:#704789;}
+a.about{ color:#d087fe;}
 
-section > a:hover > .product.tech p,
-a.tech{color:#66c7b7;}
+section > a:hover > .product.tech p{color:#3499ae;}
+a.tech{ color:#86e8fc;}
 
 section > a:hover > .product.prod p,
-a.prod{color:#2FAB2F;}
+a.prod
+{
+    color:#2FAB2F;
+}
 
 section > a > .product p{
     background-color:rgba(255,255,255,.7);
     text-align:center;
-    border-top:.5rem solid white;
-    padding:.15rem;
+    border-top:.25rem solid white;
+    padding:0 0 .2rem 0;
     height:25%;
+    font-size:1.2rem;
 }
 
 section > a:hover .product p{
