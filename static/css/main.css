@@ -81,6 +81,20 @@ nav .brand{
     color:red;
 }
 
+nav > div:not(.brand){
+display:flex;
+justify-content:center;
+align-items:flex-end;
+padding:1rem;
+}
+
+nav > div:not(.brand) p{
+    color:#666;
+    text-transform:uppercase;
+    font-weight:bold;
+    display:none;
+    font-size:.8rem;
+}
 nav ul li {
     padding:1rem;
 }
@@ -367,6 +381,7 @@ div.btn > a{
   .news-item{width:40%;}
     .news{flex-direction:row;}
     div.btn > a{margin:0 0 0 1rem;}
+    nav > div:not(.brand) p{display:block;}
 }
 
 /* Rules for tablet horisontal and small ultrabook screens */
